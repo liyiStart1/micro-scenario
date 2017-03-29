@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>雀巢</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+		<!-- Link Swiper's CSS -->
+		<link rel="stylesheet" href="lib/css/swiper.min.css">
+		<link rel="stylesheet" type="text/css" href="lib/css/animate.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<!-- Demo styles -->
+		<style>
+			html,
+			body {
+				position: relative;
+				height: 100%;
+			}
+			
+			body {
+				background: #eee;
+				font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+				font-size: 14px;
+				color: #000;
+				margin: 0;
+				padding: 0;
+			}
+			
+			.swiper-container {
+				width: 100%;
+				height: 100%;
+				margin-left: auto;
+				margin-right: auto;
+				overflow: hidden;
+			}
+			
+			.swiper-slide {
+				overflow: hidden;
+				text-align: center;
+				font-size: 18px;
+				background: #fff;
+				/* Center slide text vertically */
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				-webkit-justify-content: center;
+				justify-content: center;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				-webkit-align-items: center;
+				align-items: center;
+			}
+		</style>
+
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+	</head>
+
+	<body>
+		<!-- Swiper -->
+		<img src="imgs/musicBtn.png" alt="" class="musicTip" id="stopMusic" />
+		<audio src="music/music.mp3" id="musicPlay" autoplay="autoplay"></audio>
+
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<!--第一页-->
+				<div class="swiper-slide">
+					<img class="logo-leftTop ani" src="imgs/logo_gray.png" alt="" swiper-animate-effect="fadeIn" swiper-animate-duration="2s" swiper-animate-delay="0.3s" />
+					<img class="bg-middle ani" src="imgs/indexSnacky.jpg" swiper-animate-effect="fadeIn" swiper-animate-duration="2s" swiper-animate-delay="0.3s" />
+					<!--<img src="imgs/indexTxtThereis.png" alt="" class="bounceIn tip-01" />-->
+
+					<div class="text-middle">
+						<img src="imgs/indexTxtThereis.png" alt="" class=" tip-01 ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="2s" />
+						<img src="imgs/indexTxtLife.png" alt="" class=" tip-02 ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="2.5s" />
+						<img src="imgs/indexTxtMoreTo.png" alt="" class=" tip-03 ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="3s" />
+						<img src="imgs/indexTxtNestle.png" alt="" class=" tip-04 ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="3.5s" />
+						<img src="imgs/indexTxtCnNestle.png" alt="" class=" tip-05 ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="4s" />
+						<img src="imgs/indexTxtCnLife.png" alt="" class=" tip-06 ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="4.5s" />
+					</div>
+					<div class="move-twoPic " >
+						<img src="imgs/indexHouse0.jpg" alt="" />
+						<img src="imgs/indexHouse.jpg" alt="" />
+					</div>
+					<div class="moveLine">
+						<img src="imgs/arrow-up-blue.png" />
+					</div>
+				</div>
+
+				<!--第二页-->
+				<div class="swiper-slide two">
+					<div class="leftTop">
+						<img src="imgs/selerTxtLeft01.png" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.8s" class="ani" />
+						<img src="imgs/selerTxtLeft02.png" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="1.3s" class="ani" />
+						<img src="imgs/selerTxtLeft03.png" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="1.8s" class="ani" />
+						<img src="imgs/selerTxtLeft04.png" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="2.3s" class="ani" />
+					</div>
+
+					<img class="bgBoy ani" src="imgs/boy.gif" swiper-animate-effect="fadeInDownBig" swiper-animate-duration="0.5s" swiper-animate-delay="0.8s"></img>
+					<img src="imgs/lightsRight.png" class="rightLight ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.8s" />
+					<div class="star ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.8s">
+						<img src="imgs/starsLeft.png" class="startLft" />
+						<img src="imgs/starsRight.png" class="startRight" />
+					</div>
+					<!--<img src="" alt="" />-->
+					<div class="ritghtBottom">
+						<img src="imgs/selerTxtRight.png" class="ritghtBottom01 ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.8s" />
+						<img src="imgs/selerTxtRightMe.png" class="ritghtBottom02 ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s" />
+						<img src="imgs/selerTxtRightTitle.png" class="ritghtBottom03 ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s" />
+					</div>
+					<div class="up">
+						<img src="imgs/arrow-up.png" />
+					</div>
+				</div>
+
+				<!--第三页 -->
+				<div class="swiper-slide three">
+					<div class="ritghtBottomMarket">
+						<img src="imgs/marketTxtRight01.png" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.8s" class="ani" />
+						<img src="imgs/marketTxtRight02.png" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.5s" swiper-animate-delay="1.3s" class="ani" />
+						<img src="imgs/marketTxtRight03.png" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.5s" swiper-animate-delay="1.8s" class="ani" />
+						<img src="imgs/marketTxtRight04.png" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.5s" swiper-animate-delay="2.3s" class="ani" />
+					</div>
+
+					<img class="bgGirl ani" src="imgs/girl.gif" swiper-animate-effect="fadeInDownBig" swiper-animate-duration="0.5s" swiper-animate-delay="0.8s"></img>
+					<img src="imgs/lightsLeft.png" class="leftLight ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.8s" />
+					<div class="star ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.8s">
+						<img src="imgs/starsLeft.png" class="startLft" />
+						<img src="imgs/starsRight.png" class="startRight" />
+					</div>
+
+					<div class="markrtleftTop">
+						<img src="imgs/marketTxtLeft.png" class="marketLT01 ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.8s" />
+						<img src="imgs/selerTxtRightMe.png" class="marketLT02 ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s" />
+						<img src="imgs/marketTxtLeftTitle.png" class="marketLT03 ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s" />
+						<!--<img src="imgs/m.png" class="ritghtBottom03 ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s"/>-->
+					</div>
+					<div class="up">
+						<img src="imgs/arrow-up.png" />
+					</div>
+
+				</div>
+
+				<!--第四页-->
+				<div class="swiper-slide four">
+
+					<img src="imgs/catFix.gif" alt="" class="girl_right ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s" />
+					<img src="imgs/dogFix.gif" alt="" class="boy_left ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s" />
+
+					<img src="imgs/FixCatLight.png" alt="" class="lightR ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.6s" />
+					<img src="imgs/FixDogLight.png" alt="" class="lightL ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.6s" />
+					<img src="imgs/FixDogTxt.png" alt="" class="sLTxt ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.6s" />
+					<img src="imgs/FixCatTxt.png" alt="" class="sRTxt ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.6s" />
+					<img src="imgs/FixCatBtn.png" alt="" class="sBtn ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s" />
+					<img src="imgs/FixDogBtn.png" alt="" class="DBtn ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s" />
+					<!--<div class="slet">-->
+					<img src="imgs/FixArrowTxt.png" alt="" class="tY01" />
+					<img src="imgs/FixArrowTxtYou.png" alt="" class="tY02" />
+					<!--</div>-->
+
+					<div class="up">
+						<img src="imgs/arrow-up.png" />
+					</div>
+				</div>
+
+				<!--第五页-->
+				<div class="swiper-slide five">
+					<img src="imgs/titlesAcoreSummer.png" class="ad ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s" />
+					<img src="imgs/titlesDots.png" class="more ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.9s" />
+					<div class="job">
+						<img src="imgs/jobTitle01.png" class="job01 ani" swiper-animate-effect="fadeInDownBig" swiper-animate-duration="0.5s" swiper-animate-delay="2.4s" />
+						<img src="imgs/jobTitle02.png" class="job01 ani" swiper-animate-effect="fadeInDownBig" swiper-animate-duration="0.5s" swiper-animate-delay="2.2s" />
+						<img src="imgs/jobTitle03.png" class="job01 ani" swiper-animate-effect="fadeInDownBig" swiper-animate-duration="0.5s" swiper-animate-delay="2.0s" />
+						<img src="imgs/jobTitle04.png" class="job01 ani" swiper-animate-effect="fadeInDownBig" swiper-animate-duration="0.5s" swiper-animate-delay="1.8s" />
+						<img src="imgs/jobTitle05.png" class="job01 ani" swiper-animate-effect="fadeInDownBig" swiper-animate-duration="0.5s" swiper-animate-delay="1.6s" />
+						<img src="imgs/jobTitle06.png" class="job01 ani" swiper-animate-effect="fadeInDownBig" swiper-animate-duration="0.5s" swiper-animate-delay="1.4s" />
+						<img src="imgs/jobTitle07.png" class="job01 ani" swiper-animate-effect="fadeInDownBig" swiper-animate-duration="0.5s" swiper-animate-delay="1.2s" />
+						<img src="imgs/jobTitle08.png" class="job01 ani" swiper-animate-effect="fadeInDownBig" swiper-animate-duration="0.5s" swiper-animate-delay="1.0s" />
+
+					</div>
+
+					<div class="up">
+						<img src="imgs/arrow-up.png" />
+					</div>
+				</div>
+				<!--第六页-->
+				<div class="swiper-slide">
+					<img class="logo-leftTop ani" src="imgs/logo_gray.png" alt="" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s" />
+					<img src="imgs/endTxt2015.jpg" alt="" class="titleEnd ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.8s" />
+					<div class="search ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="1.3s">
+						<input type="text" name="" id="" value="" />
+						<img src="imgs/searchTxt.png" alt="" class="txtImput" />
+						<div class="gai ani" swiper-animate-effect="slideInLeft" swiper-animate-duration="3s" swiper-animate-delay="1.3s"></div>
+						<div class="iconS"><img src="imgs/iconsZoom.png" alt="" /></div>
+
+					</div>
+
+					<img src="imgs/endBtnGuide.png" alt="" class="guideEnd ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="2.3s" />
+					<img src="imgs/btnFollowNestle.png" alt="" class="btnEnd ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="2.5s" />
+					<img src="imgs/btnJoin.png" alt="" class="jionEnd ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="2.7s" />
+
+				</div>
+
+			</div>
+			<!-- Add Pagination -->
+			<!--<div class="swiper-pagination"></div>-->
+		</div>
+
+		<!-- Swiper JS -->
+		<script src="lib/js/swiper.min.js"></script>
+		<script src="lib/js/swiper.animate1.0.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+		<!-- Initialize Swiper -->
+		<script>
+			var swiper = new Swiper('.swiper-container', {
+				//      pagination: '.swiper-pagination',
+				direction: 'vertical',
+				slidesPerView: 1,
+				paginationClickable: true,
+				spaceBetween: 30,
+				mousewheelControl: true,
+				onInit: function(swiper) { //Swiper2.x的初始化是onFirstInit
+					swiperAnimateCache(swiper); //隐藏动画元素 
+					swiperAnimate(swiper); //初始化完成开始动画
+				},
+				onSlideChangeEnd: function(swiper) {
+					swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+				}
+			});
+
+			//zepto
+			//触摸事件
+			var flag = true;
+			$("#stopMusic").on("tap", function() {
+
+				if (flag) {
+					$(this).attr("src", "imgs/musicBtnOff.png");
+//					$("#musicPlay").removeAttr("autoplay");
+					$("#musicPlay")[0].pause();
+
+					return flag = false;
+				}
+				if (!flag) {
+					$(this).attr("src", "imgs/musicBtn.png");
+					$("#musicPlay")[0].play();
+					return flag = true;
+				}
+
+			})
+		</script>
+	</body>
+
+</html>

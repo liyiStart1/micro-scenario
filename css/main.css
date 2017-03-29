@@ -1,0 +1,506 @@
+	@keyframes opacityChange01 {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+	
+	@keyframes opacityChange02 {
+		0 {
+			opacity: 0;
+		}
+		25% {
+			opacity: 1;
+		}
+		50% {
+			opacity: 0;
+		}
+		75% {
+			opacity: 1;
+		}
+		100% {
+			opacity: 0;
+		}
+	}
+	
+	@keyframes moveChange {
+		0 {
+			left: 0px;
+		}
+		100% {
+			left: -400px;
+		}
+	}
+	
+	@keyframes moveLine {
+		0 {
+			opacity: 0;
+			bottom: 30px;
+		}
+		25% {
+			opacity: 1;
+			bottom: 40px;
+		}
+		50% {
+			opacity: 0;
+			bottom: 30px;
+		}
+		75% {
+			opacity: 1;
+			bottom: 40px;
+		}
+		100% {
+			opacity: 1;
+			bottom: 40px;
+		}
+	}
+	
+	@keyframes moveLine02 {
+		0 {
+			/*opacity: 0;*/
+			bottom: 70px;
+		}
+		25% {
+			/*opacity: 1;*/
+			bottom: 80px;
+		}
+		50% {
+			/*opacity: 0;*/
+			bottom: 70px;
+		}
+		75% {
+			bottom: 80px;
+		}
+		100% {
+			/*opacity: 1;*/
+			bottom: 70px;
+		}
+	}
+	
+	@keyframes moveNode {
+		0 {
+			left: 0px;
+		}
+		25% {
+			left: 80px;
+		}
+		50% {
+			left: 100px;
+		}
+		70% {
+			left: 140px;
+		}
+		80% {
+			left: 160px;
+		}
+		100% {
+			left: 190px;
+		}
+	}
+	
+	.musicTip {
+		position: absolute;
+		right: 20px;
+		top: 20px;
+		width: 50px;
+		height: 50px;
+		display: block;
+		z-index: 2;
+	}
+	
+	.logo-leftTop {
+		position: absolute;
+		left: 10px;
+		top: 10px;
+		width: 130px;
+		/*animation: opacityChange01 5s;*/
+	}
+	
+	.bg-middle {
+		position: absolute;
+		left: 0;
+		top: 100px;
+		width: 100%;
+		/*animation: opacityChange01 5s;*/
+	}
+	
+	.text-middle {
+		position: absolute;
+		left: 10px;
+		top: 250px;
+		width: 200px;
+	}
+	
+	.text-middle img {
+		position: absolute;
+		width: 100%;
+	}
+	
+	.move-twoPic {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		height: 111px;
+		display: flex;
+		animation: opacityChange01 3s linear;
+		animation: moveChange 10s linear 3s infinite;
+		overflow: hidden;
+	}
+	
+	.move-twoPic img {
+		height: 100%;
+		flex: 1;
+	}
+	
+	.moveLine {
+		position: absolute;
+		width: 25px;
+		height: 39px;
+		left: 45%;
+		bottom: 30px;
+		animation: moveLine 5s infinite;
+	}
+	
+	.moveLine img {
+		width: 100%;
+	}
+	/*第二页*/
+	
+	.two {
+		background: #FE657A;
+		overflow: hidden;
+	}
+	
+	.leftTop {
+		width: 62px;
+		height: 134px;
+		position: absolute;
+		left: 0;
+		top: 30px;
+		z-index: 1;
+	}
+	
+	.leftTop img {
+		position: absolute;
+		height: 100%;
+	}
+	
+	.bgBoy {
+		width: 90%;
+		position: absolute;
+		left: 62px;
+		top: -30px;
+	}
+	
+	.rightLight {
+		z-index: 1;
+		width: 90%;
+		position: absolute;
+		left: 55px;
+		top: -23px;
+	}
+	
+	.star {
+		position: absolute;
+		/*left: 20px;
+		top: -300px;*/
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+	}
+	
+	.star img {
+		height: 100%;
+		position: absolute;
+		top: -150px;
+		/*left: -100px;*/
+	}
+	
+	.star .startLft {
+		left: -80px;
+		animation: opacityChange02 2s 1s linear infinite;
+	}
+	
+	.star .startRight {
+		animation: opacityChange02 3s 1s linear infinite;
+	}
+	
+	.ritghtBottom {
+		z-index: 1;
+		position: absolute;
+		right: 10px;
+		bottom: 95px;
+		width: 70px;
+		height: 170px;
+	}
+	
+	.ritghtBottom img {
+		position: absolute;
+	}
+	
+	.ritghtBottom .ritghtBottom01 {
+		left: 0;
+		top: 29px;
+		height: 203px;
+	}
+	
+	.ritghtBottom .ritghtBottom02 {
+		left: -5px;
+		top: 12px;
+		height: 45px;
+	}
+	
+	.ritghtBottom .ritghtBottom03 {
+		left: -6px;
+		top: 10px;
+		height: 133px;
+	}
+	
+	.up {
+		/*z-index: 1;*/
+		width: 23px;
+		height: 32px;
+		position: absolute;
+		bottom: 30px;
+		animation: moveLine 5s infinite;
+	}
+	
+	.up img {
+		width: 100%;
+	}
+	/*第三页*/
+	
+	.three {
+		background: #08BEE3;
+	}
+	
+	.leftLight {
+		z-index: 1;
+		width: 80%;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+	}
+	
+	.bgGirl {
+		width: 80%;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+	}
+	
+	.markrtleftTop {
+		position: absolute;
+		width: 100px;
+		height: 160px;
+		left: 0;
+		top: 20px;
+	}
+	
+	.markrtleftTop .marketLT01 {
+		position: absolute;
+		width: 79px;
+		left: 23px;
+	}
+	
+	.markrtleftTop .marketLT02 {
+		position: absolute;
+		width: 40px;
+		left: 22px;
+	}
+	
+	.markrtleftTop .marketLT03 {
+		position: absolute;
+		width: 30px;
+		left: 18px;
+		top: -13px;
+	}
+	
+	.ritghtBottomMarket {
+		position: absolute;
+		right: 57px;
+		bottom: 178px;
+		width: 100px;
+		height: 100px;
+		z-index: 1;
+	}
+	
+	.ritghtBottomMarket img {
+		position: absolute;
+		width: 100%;
+	}
+	/*第四页*/
+	
+	.four {
+		background: #36A15C;
+		overflow: hidden;
+	}
+	
+	.four img {
+		z-index: 1;
+		width: 100%;
+		position: absolute;
+	}
+	
+	.girl_right {
+		/*position: absolute;*/
+		right: 0;
+		top: 0;
+	}
+	
+	.boy_left {
+		/*position: absolute;*/
+		left: 0;
+		top: 0;
+	}
+	
+	.lightR {
+		right: 0;
+		top: 0;
+		animation: opacityChange02 5s 2s linear infinite;
+	}
+	
+	.lightL {
+		left: 0;
+		top: 0;
+		animation: opacityChange02 5s 1s linear infinite;
+	}
+	
+	.sLTxt {
+		left: 0;
+		top: 0;
+	}
+	
+	.sRTxt {
+		right: 0;
+		top: 0;
+	}
+	
+	.sBtn {
+		position: absolute;
+		left: 0;
+		top: 10px;
+		width: 50%;
+	}
+	
+	.DBtn {
+		position: absolute;
+		left: 0;
+		top: 10px;
+		width: 50%;
+	}
+	
+	.tY01 {
+		width: 25%!important;
+		bottom: 70px!important;
+	}
+	
+	.tY02 {
+		bottom: 70px!important;
+		width: 25%!important;
+		animation: moveLine02 3s linear infinite;
+	}
+	/*第五页*/
+	
+	.five {
+		background: #669CFF;
+	}
+	
+	.five .ad {
+		position: absolute;
+		top: 41px;
+		width: 50%;
+	}
+	
+	.five .more {
+		position: absolute;
+		top: 178px;
+	}
+	
+	.job {
+		position: absolute;
+		width: 400px;
+		height: 400px;
+		bottom: 0;
+		left: 0;
+	}
+	
+	.job img {
+		position: absolute;
+		width: 100%;
+		left: 0;
+	}
+	/*最后一页*/
+	
+	.titleEnd {
+		position: absolute;
+		top: 75px;
+		width: 75%;
+	}
+	
+	.search {
+		position: absolute;
+		top: 32%;
+		width: 360px;
+	}
+	
+	.search input {
+		width: 330px;
+		height: 30px;
+		position: absolute;
+		left: 0;
+		top: 0;
+		/*background: red    ;*/
+	}
+	
+	.gai {
+		background: #fff;
+		width: 140px;
+		height: 26px;
+		position: absolute;
+		top: 5px;
+		left:180px;
+		/*animation: moveNode 5s 5s linear;*/
+	}
+	
+	.txtImput {
+		position: absolute;
+		top: 5px;
+		left: 25px;
+	}
+	
+	.iconS {
+		background: #669CFF;
+		width: 50px;
+		position: absolute;
+		top: 0;
+		right: -15px;
+		height: 36px;
+		z-index: 10;
+	}
+	
+	.iconS img {
+		width: 50%;
+		margin-top: 5px;
+	}
+	
+	.guideEnd {
+		position: absolute;
+		bottom: 150px;
+	}
+	
+	.btnEnd {
+		position: absolute;
+		bottom: 100px;
+		left: 50px;
+		width: 35%;
+	}
+	
+	.jionEnd {
+		position: absolute;
+		bottom: 100px;
+		right: 50px;
+		width: 35%;
+	}
